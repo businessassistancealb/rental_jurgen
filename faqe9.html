@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO_TIRANA_AL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <header>
+        <img src="C:\Users\35569\Downloads\5F155437-17C2-417C-960D-0F5E0A2A7B95.JPG" alt="Business Assistance Photo">
+        <h1>RENTAL_JURGEN</h1>
+        <!-- Inside the header or desired location -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Rreth nesh</a>
+        <a href="products.html">Cmimet/Paketat</a>
+        <a href="contact.html">Kontaktoni</a>
+    </nav>
+
+    
+	<section id="automjete-info" class="container">
+        
+        
+        <!-- Car Image and Short Description -->
+        <div class="car-container">
+            <img src="IMG_E3168.JPG" alt="Mercedes-Benz E400">
+            <h1 class="short-description">AUDI A5</h1>
+            <button onclick="toggleDescription(0)">See More</button>
+            <p class="full-description" style="display: none;">
+                <!-- Full Description Goes Here -->
+				<img src="IMG_E3169.JPG" alt="Mercedes-Benz E400">
+				<img src="IMG_E3170.JPG" alt="Mercedes-Benz E400">
+				<img src="IMG_E3171.JPG" alt="Mercedes-Benz E400">
+				<img src="IMG_E3172.JPG" alt="Mercedes-Benz E400">
+				<img src="IMG_E3173.JPG" alt="Mercedes-Benz E400">
+				<img src="IMG_E3174.JPG" alt="Mercedes-Benz E400"><br>
+				
+				❗️SHITET❗️<br>
+AUDI A5<br>
+-3.0 nafte quattro<br>
+-viti 12/2012<br>
+-280.000 KM<br>
+Letrat taksa per nje vit<br>
+Targ me zgjedhje<br>
+Serdilje lekur me ngrohje<br>
++ - ne timon<br>
+Disqe dhe goma te reja<br>
+Shitet ose ndrrohet me makine me te vogel + diferencen nga ana juaj.<br>
+Cmimi 12.800€<br>
+				
+				
+
+				
+ 
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Bottom Strip -->
+  <header class="bottom-strip">
+        <p>&copy; 2024 @rental_jurgen. All rights reserved.</p>
+    </header>
+
+<script>
+    function toggleDescription(buttonIndex) {
+        var fullDescriptions = document.querySelectorAll('.full-description');
+        var seeMoreButtons = document.querySelectorAll('button');
+
+        var fullDescription = fullDescriptions[buttonIndex];
+        var seeMoreButton = seeMoreButtons[buttonIndex];
+
+        if (fullDescription.style.display === 'none') {
+            fullDescription.style.display = 'block';
+            
+        } else {
+            fullDescription.style.display = 'none';
+            seeMoreButton.innerHTML = 'See More';
+        }
+    }
+</script>
+v
+	
+</body>
+
+</html>

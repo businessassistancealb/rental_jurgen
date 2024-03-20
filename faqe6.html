@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO_TIRANA_AL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <header>
+        <img src="C:\Users\35569\Downloads\5F155437-17C2-417C-960D-0F5E0A2A7B95.JPG" alt="Business Assistance Photo">
+        <h1>RENTAL_JURGEN</h1>
+        <!-- Inside the header or desired location -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+   <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Rreth nesh</a>
+        <a href="products.html">Cmimet/Paketat</a>
+        <a href="contact.html">Kontaktoni</a>
+    </nav>
+
+    <h1> PER MOMENTIN NUK KA AUTOMJETE NE GJENDJE </h1>
+
+    <!-- Bottom Strip -->
+  <header class="bottom-strip">
+        <p>&copy; 2024 @rental_jurgen. All rights reserved.</p>
+    </header>
+
+<script>
+    function toggleDescription(buttonIndex) {
+        var fullDescriptions = document.querySelectorAll('.full-description');
+        var seeMoreButtons = document.querySelectorAll('button');
+
+        var fullDescription = fullDescriptions[buttonIndex];
+        var seeMoreButton = seeMoreButtons[buttonIndex];
+
+        if (fullDescription.style.display === 'none') {
+            fullDescription.style.display = 'block';
+            
+        } else {
+            fullDescription.style.display = 'none';
+            seeMoreButton.innerHTML = 'See More';
+        }
+    }
+</script>
+v
+	
+</body>
+
+</html>
