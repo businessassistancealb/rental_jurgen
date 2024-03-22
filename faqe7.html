@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO_TIRANA_AL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="rental.jpg" alt="Business Assistance Photo">
+        <h1>RENTAL_JURGEN</h1>
+        <!-- Inside the header or desired location -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Rreth nesh</a>
+        <a href="products.html">Cmimet/Paketat</a>
+        <a href="contact.html">Kontaktoni</a>
+    </nav>
+
+    <section id="automjete-info" class="container">
+        <h2>AUTOMJETE AUDI</h2>
+        
+        <!-- Car Image and Short Description -->
+        <div class="car-container">
+            <img src="golf.jpg" alt="Mercedes-Benz E400">
+            <h1 class="short-description">Vw Golf 5</h1>
+            <button onclick="toggleDescription(0)">See More</button>
+            <p class="full-description" style="display: none;">
+
+				Motorr-1.9 Nafte<br>
+Viti-2005<br>
+Kambio-Manual<br>
+Numri telefonit:0699944719<br>
+Instagram:@rental_jurgen<br>
+
+				
+				
+
+
+            </p>
+        </div>
+    </section>
+
+<script>
+    function toggleDescription(buttonIndex) {
+        var fullDescriptions = document.querySelectorAll('.full-description');
+        var seeMoreButtons = document.querySelectorAll('button');
+
+        var fullDescription = fullDescriptions[buttonIndex];
+        var seeMoreButton = seeMoreButtons[buttonIndex];
+
+        if (fullDescription.style.display === 'none') {
+            fullDescription.style.display = 'block';
+            
+        } else {
+            fullDescription.style.display = 'none';
+            seeMoreButton.innerHTML = 'See More';
+        }
+    }
+</script>
+v
+	
+</body>
+
+</html>
