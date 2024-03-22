@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto_tirana_al</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <header>
+        <img src="C:\Users\35569\Downloads\5F155437-17C2-417C-960D-0F5E0A2A7B95.JPG" alt="Business Assistance Photo">
+        <h1>RENTAL_JURGEN</h1>
+        <!-- Inside the header or desired location -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Rreth nesh</a>
+        <a href="products.html">Cmimet/Paketat</a>
+        <a href="contact.html">Kontaktoni</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section id="home" class="container">
+        <!-- Content goes here -->
+
+        <!-- Shtoni këtë në seksionin "Home" -->
+        <section id="home" class="container">
+            <h2>Mireseerdhet ne website-n tone!</h2>
+            <p>Ofrojme makina me qera.</p>
+			 <p>Ndodhemi ne qytetin e Tiranes.</p>
+			  <p>Per me teper kontaktoni ne Instagram:@rental_jurgen ose ne numrin .</p>
+            
+            </ul>
+
+            <!-- Butonat e stiluar dhe fotoja -->
+			
+            <div class="button-container">
+			
+				 <h2>Ne kategorite me poshte do te gjeni automjetet qe  ne ofrojme te klasifikuara sipas markes!</h2>
+                <a href="faqe2.html" class="styled-button luxury">MERCEDES-BENZ</a>
+                <img src="http://www.car-brand-names.com/wp-content/uploads/2015/05/Mercedes-symbol.jpg"
+                    alt="Fotoja">
+                <a href="faqe3.html" class="styled-button luxury">BMW</a>
+                <img src="http://3.bp.blogspot.com/-Y49k5BElCO0/VydOpHVrvrI/AAAAAAAAAXw/Yb4gy8G3ywgOBH7YyzoGRtP7r_PX6WeYQCHM/s1600/bmw-logo-vector-automobile-company-free-vector-logos-download.jpg" alt="Second Image">
+                <a href="faqe8.html" class="styled-button luxury">AUDI</a>
+                <img src="https://i.pinimg.com/originals/dd/a2/a9/dda2a96d9a7e8a22f9818b8f530c3605.jpg" alt="Third Image">
+              <a href="faqe7.html" class="styled-button luxury">VOLKSWAGEN</a>
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/volkswagen-10-logo-png-transparent.png" alt="Third Image">
+                <a href="faqe5.html" class="styled-button luxury">LAND ROVER</a>
+                <img src="https://listcarbrands.com/wp-content/uploads/2016/03/Land-Rover-Logo.jpg"
+                    alt="Fotoja">
+                <a href="faqe6.html" class="styled-button luxury">FIAT</a>
+                <img src="https://wallpaperaccess.com/full/1311340.jpg">
+             
+                <a href="faqe8.html" class="styled-button luxury">FORD</a>
+                <img src="http://www.pixelstalk.net/wp-content/uploads/2016/06/Ford-Logo-Wallpapers-Free-Download.jpg" alt="Third Image">
+				<a href="faqe8.html" class="styled-button luxury">VOLVO</a>
+                <img src="http://tous-logos.com/wp-content/uploads/2017/10/Logo-Volvo.png" alt="Third Image">
+				<a href="faqe8.html" class="styled-button luxury">PEUGEOT</a>
+                <img src="http://tous-logos.com/wp-content/uploads/2017/07/logo-Peugeot.png" alt="Third Image">
+				<a href="faqe8.html" class="styled-button luxury">RENAULT</a>
+                <img src="https://th.bing.com/th/id/R.270b7ca23f62ccee3b4ff6059e2fc393?rik=%2fGGqaVr4Btp00g&pid=ImgRaw&r=0" alt="Third Image">
+				<a href="faqe8.html" class="styled-button luxury">SKODA</a>
+                <img src="https://wallpapercave.com/wp/wp6909921.jpg" alt="Third Image">
+				<a href="faqe8.html" class="styled-button luxury">MITSUBISHI</a>
+                <img src="https://logodownload.org/wp-content/uploads/2014/10/mitsubish-logo.png" alt="Third Image">
+				<a href="faqe4.html" class="styled-button luxury">TOYOTA</a>
+                <img src="https://wallpaperaccess.com/full/1867198.jpg"
+            </div>
+       
+    <!-- Bottom Strip -->
+    <header class="bottom-strip">
+        
+    </header>
+
+    <!-- Add this script at the end of the body section -->
+    <script>
+        function performSearch() {
+            // Get the search query from the input field
+            var searchQuery = document.getElementById('search-bar').value;
+
+            // Convert the search query to lowercase for case-insensitive comparison
+            var lowercaseSearchQuery = searchQuery.toLowerCase();
+
+            // Map your available buttons to their corresponding pages
+            var buttonPages = {
+                'automjete': 'faqe1.html',
+                'ndertim': 'faqe2.html',
+                'elektronike': 'faqe3.html',
+                'arredim': 'faqe4.html',
+                'restorante': 'faqe5.html',
+                'hotele': 'faqe6.html',
+                'kurse': 'faqe7.html',
+                'vende pune': 'faqe8.html'
+                // Add more mappings as needed
+            };
+
+            // Check if the search query matches a button
+            if (lowercaseSearchQuery in buttonPages) {
+                // Redirect to the corresponding page
+                window.location.href = buttonPages[lowercaseSearchQuery];
+            } else {
+                // Handle the case when no match is found (e.g., display a message)
+                console.log('No matching page found for:', searchQuery);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
